@@ -1,9 +1,9 @@
 function laske(){
-var por
 
     let luku1 = document.getElementById('luku1').value * 1;
     let toiminto = document.getElementById('toiminto').value;
     let tulos = '';
+    
 
     if (toiminto == 'valitse'){
         tulos = 'Et valinnut toimintoa!'
@@ -61,5 +61,6 @@ function ck(x){
 }
 
 function tulostaVastaus(vastaus){
-    document.getElementById('vastaus').innerHTML = vastaus;
+    document.getElementById('vastaus').innerHTML = vastaus
 }
+

@@ -11,16 +11,15 @@
         Valitse laskutoimitus:<br>
         <select name="toiminto" id="toiminto">
             <option value="valitse">Valitse täältä!</option>
-            <option value="cf">Celcius -> Fahrenheit</option>
-            <option value="fc">Fahrenheit -> Celcius</option>
-            <option value="fk">Fahrenheit -> Kelvin</option>
-            <option value="kf">Kelvin -> Fahrenheit</option>
-            <option value="kc">Kelvin -> Celcius</option>
-            <option value="ck">Celcius -> Kelvin</option>
+            <option value="cf" id="exclude">Celcius -> Fahrenheit</option>
+            <option value="fc" id="exclude">Fahrenheit -> Celcius</option>
+            <option value="fk" id="exclude">Fahrenheit -> Kelvin</option>
+            <option value="kf" id="exclude">Kelvin -> Fahrenheit</option>
+            <option value="kc" id="exclude">Kelvin -> Celcius</option>
+            <option value="ck" id="exclude">Celcius -> Kelvin</option>
         </select>
     </p>
     <input type="number" name="luku1" id="luku1" placeholder="Insert number">
-    <br>
 
     <button onclick="laske()">Calculate</button>
 
@@ -28,3 +27,12 @@
     <script src="main.js"></script>
 </body>
 </html>
+
+<!---
+Refinements to do:
+[] Rounding options (Round to: Do not round, 1 decimal, 2 decimals, 3 decimals)
+[] Temperature suffix on answer
+[] Hide answer prefix until conversion is run
+[] Red answer text when run with no conversion chosen
+[] Hide input field until action is chosen
+-->
