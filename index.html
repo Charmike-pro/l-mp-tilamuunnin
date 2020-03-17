@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script async src="script.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pyryn lämpötilamuunnin WIP</title>
+    <title>Pyryn lämpötilamuunnin</title>
 </head>
 <body>
+    <h1>Pyryn lämpötilamuunnin</h1>
     <p>
-        <label>Fahrenheit</label>
-        <input id="inputFahrenheit" type="number" placeholder="Syötä luku" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
-      </p>
-      <div class="highlight">
-      <p>Celcius: <span  id="outputCelcius"></span>
-        
-      </div>
+        Valitse laskutoimitus:<br>
+        <select name="toiminto" id="toiminto">
+            <option value="valitse">Valitse täältä!</option>
+            <option value="cf">Celcius -> Fahrenheit</option>
+            <option value="fc">Fahrenheit -> Celcius</option>
+            <option value="fk">Fahrenheit -> Kelvin</option>
+            <option value="kf">Kelvin -> Fahrenheit</option>
+            <option value="kc">Kelvin -> Celcius</option>
+            <option value="ck">Celcius -> Kelvin</option>
+        </select>
+    </p>
+    <input type="number" name="luku1" id="luku1" placeholder="Insert number">
+    <br>
+
+    <button onclick="laske()">Calculate</button>
+
+    <p>Vastaus: <span id="vastaus"></span> </p>
+    <script src="main.js"></script>
 </body>
 </html>
