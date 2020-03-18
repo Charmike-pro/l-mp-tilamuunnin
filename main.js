@@ -6,8 +6,8 @@ function laske(){
     
 
     if (toiminto == 'valitse'){
-        tulos = 'Et valinnut toimintoa!'
-
+        tulos ='<font color=red><b>Et valinnut toimintoa!</b></font>'
+        
     } else if (toiminto == 'fc'){
         tulos = fc(luku1);
     }
